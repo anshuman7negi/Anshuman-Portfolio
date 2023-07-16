@@ -198,6 +198,12 @@
   border-radius: 5px;
 }
 
+.tech-skills img {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 100%;
+}
+
 .tech-skills p {
   font-weight: 600;
   font-size: 24px;
