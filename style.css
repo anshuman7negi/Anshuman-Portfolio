@@ -109,6 +109,10 @@
   display: flex;
   list-style-type: none;
   gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
 }
 
 .skills li,
