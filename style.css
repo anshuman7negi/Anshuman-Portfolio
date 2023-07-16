@@ -116,7 +116,16 @@
   flex-basis: 100%;
 }
 
-.skills li,
+.skills li {
+  color: #36b37e;
+  background-color: #fff;
+  padding: 12px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3%;
+  font-weight: 600;
+}
+
 .cardDetails ul li {
   background-color: #ebf0ee;
   padding: 12px 10px;
@@ -216,11 +225,6 @@
   text-align: center;
 }
 
-.skills li {
-  color: #36b37e;
-  background-color: #fff;
-}
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -270,14 +274,17 @@
   margin: 0 auto;
 }
 
-.about-details button:hover,
 .cardDetails button:hover,
-.contact form button:hover {
+.about-details button:hover {
   box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
 }
 
 .about-details button:active,
-.contact form button:active,
-.cardDetails button:active {
+.cardDetails button:active,
+.contact form button:active {
   background-color: #008552;
+}
+
+.contact form button:hover {
+  box-shadow: 0 8px 16px 0 rgba(54, 179, 127, 0.24);
 }
