@@ -6,6 +6,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .about {
   background-image: url(./images/mobileImages/header-illsutration-mobile.svg);
   height: 100vh;
