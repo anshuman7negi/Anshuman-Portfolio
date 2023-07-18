@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
   font-family: 'Inter', sans-serif;
 }
 
@@ -14,35 +14,36 @@ body {
   background-image: url(./images/mobileImages/header-illsutration-mobile.svg);
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 2rem;
   gap: 2rem;
 }
 
 .about h1 {
   color: #172b4d;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.2;
   text-align: center;
-  width: 327px;
+  max-width: 327px;
+  margin-bottom: 1rem;
 }
 
 .about h1 span {
   color: #36b37e;
-  text-align: center;
 }
 
 .about p {
   color: #172b4d;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75;
   text-align: center;
+  max-width: 500px;
 }
 
 .about ul,
@@ -62,9 +63,9 @@ body {
 
 .projects h3 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  width: 327px;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  max-width: 327px;
   text-align: center;
   color: #172b4d;
   position: relative;
@@ -74,7 +75,7 @@ body {
   position: absolute;
   content: '';
   background-color: #36b37e;
-  bottom: -30px;
+  bottom: -0.75rem;
   left: 50%;
   width: 4rem;
   height: 1px;
@@ -90,7 +91,9 @@ body {
 }
 
 .card img {
-  height: 310px;
+  height: 19.375rem; /* 310px */
+  width: 100%;
+  object-fit: cover;
 }
 
 .cardDetails {
@@ -103,8 +106,8 @@ body {
 
 .cardDetails p {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 1.33;
   text-align: center;
 }
 
@@ -123,20 +126,20 @@ body {
 .skills li {
   color: #36b37e;
   background-color: #fff;
-  padding: 12px 10px;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 3%;
+  padding: 0.75rem 0.625rem;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
   font-weight: 600;
 }
 
 .cardDetails ul li {
   background-color: #ebf0ee;
-  padding: 12px 10px;
+  padding: 0.75rem 0.625rem;
   color: #3a4a42;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 3%;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
   font-weight: 600;
 }
 
@@ -144,9 +147,9 @@ body {
   color: #fff;
   background-color: #36b37f;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  padding: 12px;
+  font-size: 0.875rem;
+  line-height: 1.38;
+  padding: 0.75rem;
   width: 150px;
   border: none;
   border-radius: 5px;
@@ -172,30 +175,30 @@ body {
 
 .about-details h3 {
   color: #172b4d;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.2;
   text-align: center;
 }
 
 .about-details p,
 .contact p {
   color: #172b4d;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 1.6;
   text-align: center;
 }
 
 .about-details button {
-  padding: 12px 10px;
+  padding: 0.75rem 0.625rem;
   color: #fff;
   background-color: #36b37e;
   border: none;
   border-radius: 5px;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 0.875rem;
+  line-height: 1.38;
 }
 
 .skills-container {
@@ -218,14 +221,14 @@ body {
 
 .tech-skills img {
   background-color: #fff;
-  padding: 10px;
+  padding: 0.625rem;
   border-radius: 100%;
 }
 
 .tech-skills p {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 1.33;
   text-align: center;
 }
 
@@ -243,8 +246,8 @@ body {
 .contact h3 {
   text-align: center;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 .contact form {
@@ -255,13 +258,13 @@ body {
 }
 
 .contact form input {
-  padding: 7px;
+  padding: 0.4375rem;
   color: #d0d9d4;
   border: 1px solid #d0d9d4;
 }
 
 .contact form textarea {
-  padding: 7px;
+  padding: 0.4375rem;
   border: 1px solid #d0d9d4;
 }
 
@@ -269,9 +272,9 @@ body {
   color: #fff;
   background-color: #36b37f;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  padding: 12px;
+  font-size: 0.875rem;
+  line-height: 1.38;
+  padding: 0.75rem;
   width: 150px;
   border: none;
   border-radius: 5px;
