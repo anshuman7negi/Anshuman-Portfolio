@@ -125,7 +125,7 @@ body {
 .skills {
   display: flex;
   list-style-type: none;
-  gap: 1rem;
+  gap: 0.6rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -217,12 +217,12 @@ body {
   margin-top: 4rem;
   gap: 1rem;
 }
-
+                                           
 .tech-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   padding: 3rem 1rem;
   background-color: #ebf0ee;
   border: none;
@@ -389,12 +389,11 @@ body {
 
   .skills-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
   }
 
   .tech-skills {
     max-width: 369px;
-    max-height: 316px;
     padding: 2rem 1rem;
   }
 
@@ -402,13 +401,6 @@ body {
     background-image: url(./images/desktopImages/aboutdesktopfirst.svg);
     background-repeat: no-repeat;
     background-position: right 5vw;
-  }
-
-  .skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    max-width: none;
   }
 
   .contact p {
