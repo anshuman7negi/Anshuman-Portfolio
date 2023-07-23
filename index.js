@@ -16,7 +16,7 @@ const projectData = [
   },
 ];
 
-const project = document.querySelector('.projects');
+const project = document.querySelector('.projectContainer');
 
 for (let i = 0; i < projectData.length; i += 1) {
   let languages = '';
