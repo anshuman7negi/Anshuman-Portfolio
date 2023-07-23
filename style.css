@@ -227,6 +227,7 @@ body {
   background-color: #ebf0ee;
   border: none;
   border-radius: 5px;
+  box-shadow: -4px 3px 12px green
 }
 
 .tech-skills img {
@@ -370,6 +371,7 @@ body {
     max-height: 474px;
     position: relative;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
   }
 
   .cardDetails {
@@ -408,13 +410,14 @@ body {
   }
 
   .contact {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-image: url(./images/desktopImages/contactfirst.svg);
     background-repeat: no-repeat;
     background-position: right calc(100% + 4vw);
     align-items: center;
-    justify-content: center;
+    justify-items: end;
+    gap: 2rem;
   }
 
   .contact h3 {
@@ -424,7 +427,8 @@ body {
   }
 
   .contact form {
-    width: 50%;
+    width: 80%;
+    margin-right: 7rem;
   }
 
   .footer {
