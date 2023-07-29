@@ -2,17 +2,26 @@ const projectData = [
   {
     projectImage: './ajju.jpg',
     projectTitle: 'To Do List',
+    cardDetail: "A simple to-do list application that helps to organize your daily tasks and keep track of the task you have completed and the task you are yet to have completed, and also deleting the completed task leaving those yet to be completed.",
     languageUsed: ['HTML', 'CSS', 'JavaScript'],
+    live_version: 'https://anshuman7negi.github.io/Todo-list-webpack/dist/',
+    link_source: 'https://github.com/anshuman7negi/Todo-list-webpack',
   },
   {
     projectImage: './ajju.jpg',
     projectTitle: 'To Do List',
+    cardDetail: "A simple to-do list application that helps to organize your daily tasks and keep track of the task you have completed and the task you are yet to have completed, and also deleting the completed task leaving those yet to be completed.",
     languageUsed: ['HTML', 'CSS', 'JavaScript'],
+    live_version: 'https://anshuman7negi.github.io/Todo-list-webpack/dist/',
+    link_source: 'https://github.com/anshuman7negi/Todo-list-webpack',
   },
   {
     projectImage: 'ajju.jpg',
     projectTitle: 'To Do app',
+    cardDetail: "A simple to-do list application that helps to organize your daily tasks and keep track of the task you have completed and the task you are yet to have completed, and also deleting the completed task leaving those yet to be completed.",
     languageUsed: ['HTML', 'CSS', 'JavaScript'],
+    live_version: 'https://anshuman7negi.github.io/Todo-list-webpack/dist/',
+    link_source: 'https://github.com/anshuman7negi/Todo-list-webpack',
   },
 ];
 

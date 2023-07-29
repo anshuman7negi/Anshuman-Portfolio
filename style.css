@@ -78,12 +78,25 @@ body {
   display: block;
   position: absolute;
   padding: 1rem;
-  top: 0;
+  top: -100px;
   right: 50%;
   transform: translate(50%);
   background-color: red;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  animation: slideFromTop 1s forwards ease-out;
+}
+
+@keyframes slideFromTop {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .cancel-button {
@@ -102,6 +115,7 @@ body {
 .about h1 span {
   color: rgb(54, 179, 126);
 }
+
 
 .about p {
   color: #172b4d;
@@ -164,7 +178,8 @@ body {
 }
 
 .card img {
-  height: 19.375rem; /* 310px */
+  height: 19.375rem;
+  /* 310px */
   width: 100%;
   object-fit: cover;
 }
@@ -228,10 +243,22 @@ body {
   font-size: 0.875rem;
   line-height: 1.38;
   padding: 0.75rem;
-  width: 150px;
   border: none;
+  width: 150px;
   border-radius: 5px;
   margin-bottom: 2rem;
+  animation: popupLight 2s;
+}
+
+@keyframes popupLight {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+
 }
 
 .about-skills {
@@ -296,7 +323,18 @@ body {
   background-color: #ebf0ee;
   border: none;
   border-radius: 5px;
-  box-shadow: -4px 3px 12px green;
+  animation: firefly 1s infinite;
+}
+
+@keyframes firefly {
+  0% {
+    box-shadow: 0px 0px 0px green;
+  }
+
+  100% {
+    box-shadow: 0px 0px 7px green;
+  }
+
 }
 
 .tech-skills img {
@@ -516,17 +554,47 @@ body {
     border: none;
   }
 
-  .top-container {
-    display: flex;
-    flex-direction: column;
-  }
-
   .top-container img {
-    max-width: 872px;
     max-height: 616px;
   }
 
   .middle-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
   }
+
+  .seeProject {
+    display: none;
+    padding: 2rem 8rem;
+  }
+
+  .seeProject-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    border-radius: 16px;
+    padding: 0.6rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(54, 179, 126);
+    position: relative;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    padding: 0 1rem;
+  }
+
+  .project-buttons {
+    display: flex;
+  }
+
+  .bottom-container button {
+    width: 135px;
+    height: 50px;
+  }
+
 }
